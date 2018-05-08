@@ -4,7 +4,7 @@
     <insert id="saveTest" parameterType="test">
       insert  into test(username,password) values (#{username},#{password})
     </insert>
-    <select id="getTestById" parameterType="int">
+    <select id="getTestById" parameterType="int" resultType="test">
       select id,username,password from test where id=#{id}
     </select>
 </mapper>
