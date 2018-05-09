@@ -21,6 +21,6 @@ public class TestAction {
    public String selectTest(HttpServletRequest request,HttpServletResponse response,ModelMap modelMap,int id){
 	   Test test = testService.getTestById(id);
 	   modelMap.addAttribute("test", test);
-	   return "";
+	   return "test/selectTest";
    }
 }
